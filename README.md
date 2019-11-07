@@ -1,7 +1,18 @@
 # Monitoring-Neuron-Activations
-A descriptive visualization of neuron activations for image classification.
+A descriptive visualization of neuron activations for image classification and analyzing the robustness of the classification model by comparing the test image output and corresponding activation patterns.
+
 
 ![Proposed architecture](/images/architecture.png)
+
+## Authors
+- Jaswanth Bandlamudi
+- Sasi Kiran Gaddipati
+
+## Requirements and Installation
+
+
+## Project structure
+
 
 ## Reference
 
