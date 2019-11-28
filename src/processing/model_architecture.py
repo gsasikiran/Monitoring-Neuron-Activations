@@ -15,7 +15,7 @@ class ModelArchitecture:
         return VGG16()
 
     @staticmethod
-    def CNN(input_shape=(28, 28, 3)):
+    def CNN(input_shape=(28, 28, 1)):
         """
          Return CNN architecture
         :param input_shape: tuple
