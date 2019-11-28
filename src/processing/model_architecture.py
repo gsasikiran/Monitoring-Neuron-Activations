@@ -1,14 +1,52 @@
-import tensorflow as tf
-import matplotlib.pyplot as plt
-import os
-from keras.applications.vgg16 import VGG16, preprocess_input
+from keras.applications.vgg16 import VGG16
+
+from keras.layers import Input, Dense, Activation, BatchNormalization, Flatten, Conv2D
+from keras.layers import MaxPooling2D, Dropout
 
 from keras.models import Model
-import numpy as np
+
 
 class ModelArchitecture:
     def __init__(self):
         pass
-    def VGG16(self):
+
+    @staticmethod
+    def VGG16():
         return VGG16()
 
+    @staticmethod
+    def CNN(input_shape=(28, 28, 3)):
+        """
+         Return CNN architecture
+        :param input_shape: tuple
+            The input shape of the image (width, height, channels)
+        :return:
+        """
+
+        input = Input(input_shape)
+
+        x = Conv2D(64, (3, 3), strides=(1, 1), name='layer_conv1', padding='same')(input)
+        x = BatchNormalization()(x)
+        x = Activation('relu')(x)
+        x = MaxPooling2D((2, 2), name='maxPool1')(x)
+
+        x = Conv2D(64, (3, 3), strides=(1, 1), name='layer_conv2', padding='same')(x)
+        x = BatchNormalization()(x)
+        x = Activation('relu')(x)
+        x = MaxPooling2D((2, 2), name='maxPool2')(x)
+
+        x = Conv2D(32, (3, 3), strides=(1, 1), name='conv3', padding='same')(x)
+        x = BatchNormalization()(x)
+        x = Activation('relu')(x)
+        x = MaxPooling2D((2, 2), name='maxPool3')(x)
+
+        x = Flatten()(x)
+        x = Dense(64, activation='relu', name='fc0')(x)
+        x = Dropout(0.25)(x)
+        x = Dense(32, activation='relu', name='fc1')(x)
+        x = Dropout(0.25)(x)
+        x = Dense(10, activation='softmax', name='fc2')(x)
+
+        model = Model(inputs=input, outputs=x, name='Predict')
+
+        return model

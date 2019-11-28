@@ -4,10 +4,11 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-def image_preprocess(img_path):
+def image_preprocess(img_path, input_shape):
 
-    img = load_img(img_path, target_size=(224,224,3))
+    img = load_img(img_path, target_size=input_shape)
     plt.imshow(img)
     img_array = img_to_array(img)
     img_exp = np.expand_dims(img_array, axis=0)
     img = preprocess_input(img_exp)
+    return img
