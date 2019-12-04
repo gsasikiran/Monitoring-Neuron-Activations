@@ -7,22 +7,17 @@ from src.pre_processing.read_data import Data
 
 class Image(unittest.TestCase):
 
-    # def __init__(self):
-    #     super().__init__()
-    #     self.MNIST_data = Data()
-    #     self.x_train, self.y_train = self.MNIST_data.get_data()
-    #     self.x_train_images = self.MNIST_data.df_to_images(self.x_train)
-
     # def image_type(self):
     #     pass
 
-    def image_shape(self):
+    def test_image_shape(self):
+
         MNIST_data = Data()
         x_train, y_train = MNIST_data.get_data()
         x_train_images = MNIST_data.df_to_images(x_train)
 
-        for image in x_train_images:
-            self.assertEqual(np.shape(image), (28, 28))
+        self.assertEqual(np.shape(x_train_images[2]), (28, 28))
+
 
 
 # class Output(unittest.TestCase):
