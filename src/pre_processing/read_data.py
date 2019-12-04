@@ -22,8 +22,26 @@ class Data:
         return x, y
 
     @staticmethod
-    def get_image_array(series, shape=(28, 28)):
+    def __get_image_array(series, shape):
         x = series.to_numpy()
         x = np.expand_dims(x, axis=1)
         x = x.reshape(shape)
         return x
+
+    def df_to_images(self, df, img_size=(28,28)):
+        """Convert the dataframe of pixels into images
+
+        param:
+        df: Pandas data frame
+        img_size: tuple
+            Required size of the image.
+
+        returns: list
+            Returns list of images corresponding to the rows of the dataframe
+        """
+
+        df_images = list()
+        for i in range(0, len(df)):
+            df_images.append(self.__get_image_array(df.iloc[i], img_size))
+
+        return df_images
