@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.com/gsasikiran/Monitoring-Neuron-Activations.svg?token=Tx91FqTgxZM9ucHAnbfR&branch=master)](https://travis-ci.com/gsasikiran/Monitoring-Neuron-Activations/)
+
+
 # Monitoring-Neuron-Activations
 
 ## Authors
