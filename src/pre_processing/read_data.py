@@ -5,7 +5,8 @@ from sklearn.model_selection import train_test_split
 
 class Data:
 
-    def __init__(self, path_train, path_test):
+    def __init__(self, path_train="/home/gsasikiran/Desktop/Semester_3/SDP/Monitoring-Neuron-Activations/MNIST_data/train.csv",
+                 path_test='/home/gsasikiran/Desktop/Semester_3/SDP/Monitoring-Neuron-Activations/MNIST_data/test.csv'):
         self.path_train = path_train
         self.path_test = path_test
 
@@ -28,7 +29,7 @@ class Data:
         x = x.reshape(shape)
         return x
 
-    def df_to_images(self, df, img_size=(28,28)):
+    def df_to_images(self, df, img_size=(28, 28)):
         """Convert the dataframe of pixels into images
 
         param:
