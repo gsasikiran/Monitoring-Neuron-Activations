@@ -24,7 +24,7 @@ model = Model(inputs=model_cnn.inputs, outputs=outputs)
 img = X_train_images[5]
 feature_maps = model.predict(img.reshape(1, 28, 28, 1))
 
-print(len(feature_maps))
+print(feature_maps)
 
 # display_activation(feature_maps,8,4,2)
 
