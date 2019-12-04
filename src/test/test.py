@@ -16,7 +16,8 @@ class Image(unittest.TestCase):
         x_train, y_train = MNIST_data.get_data()
         x_train_images = MNIST_data.df_to_images(x_train)
 
-        self.assertEqual(np.shape(x_train_images[2]), (28, 28))
+        for image in x_train_images:
+            self.assertEqual(image.shape, (28, 28))
 
 
 
