@@ -5,8 +5,8 @@ from sklearn.model_selection import train_test_split
 
 class Data:
 
-    def __init__(self, path_train="/home/gsasikiran/Desktop/Semester_3/SDP/Monitoring-Neuron-Activations/MNIST_data/train.csv",
-                 path_test='/home/gsasikiran/Desktop/Semester_3/SDP/Monitoring-Neuron-Activations/MNIST_data/test.csv'):
+    def __init__(self, path_train="../../MNIST_data/train.csv",
+                 path_test='../../MNIST_data/test.csv'):
         self.path_train = path_train
         self.path_test = path_test
 
