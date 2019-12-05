@@ -1,4 +1,4 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)]
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 [![Build Status](https://travis-ci.com/gsasikiran/Monitoring-Neuron-Activations.svg?token=Tx91FqTgxZM9ucHAnbfR&branch=master)](https://travis-ci.com/gsasikiran/Monitoring-Neuron-Activations/)
 
 
