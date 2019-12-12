@@ -5,10 +5,13 @@ python:
 # command to install dependencies
 install:
   - pip install -r requirements.txt
+
 # command to run tests
-#script:
-#  - cd src/test
-#  - python3 tes
+script:
+  - python3 -m unittest src.test.test.Image
+
+
+
 
 
 
