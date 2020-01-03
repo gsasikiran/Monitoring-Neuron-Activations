@@ -11,8 +11,8 @@ warnings.filterwarnings("ignore")
 
 # img = image_preprocess_tri("/home/gsasikiran/Desktop/Semester_3/SDP/Monitoring-Neuron-Activations/triangles/drawing(1).png")
 
-TRAIN_PATH = "/home/gsasikiran/Desktop/Semester_3/SDP/Monitoring-Neuron-Activations/MNIST_data/train.csv"
-TEST_PATH = "/home/gsasikiran/Desktop/Semester_3/SDP/Monitoring-Neuron-Activations/MNIST_data/test.csv"
+TRAIN_PATH = "MNIST_data/train.csv"
+TEST_PATH = "MNIST_data/test.csv"
 MNIST_data = Data(TRAIN_PATH, TEST_PATH)
 
 X_train, y_train = MNIST_data.get_data()
