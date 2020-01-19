@@ -1,4 +1,4 @@
-PIL
+Pillow
 pandas
 scikit-learn
 numpy
