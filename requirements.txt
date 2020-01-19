@@ -1,3 +1,4 @@
+PIL
 pandas
 scikit-learn
 numpy

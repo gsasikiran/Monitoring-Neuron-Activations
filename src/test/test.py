@@ -1,24 +1,25 @@
 import unittest
 
-import numpy as np
-
 from src.pre_processing.read_data import Data
 
 
 class Image(unittest.TestCase):
 
-    # def image_type(self):
-    #     pass
+    def image_type(self):
+        # self.train_path = train_path
+        # self.test_path = test_path
+        pass
 
     def test_image_shape(self):
 
-        MNIST_data = Data()
+        train_path = '../../../MNIST_data/train.csv'
+        test_path = '../../../MNIST_data/test.csv'
+        MNIST_data = Data(path_train=train_path, path_test=test_path)
         x_train, y_train = MNIST_data.get_data()
         x_train_images = MNIST_data.df_to_images(x_train)
 
         for image in x_train_images:
             self.assertEqual(image.shape, (28, 28))
-
 
 
 # class Output(unittest.TestCase):

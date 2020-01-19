@@ -12,6 +12,11 @@ class ModelArchitecture:
 
     @staticmethod
     def VGG16():
+        """
+         Creates a VGG16 model
+         VGG16 model - 'https://arxiv.org/pdf/1409.1556.pdf'
+        :return: Model's instance
+        """
         return VGG16()
 
     @staticmethod
@@ -20,7 +25,7 @@ class ModelArchitecture:
          Return CNN architecture
         :param input_shape: tuple
             The input shape of the image (width, height, channels)
-        :return:
+        :return: Model's instance
         """
 
         input = Input(input_shape)
