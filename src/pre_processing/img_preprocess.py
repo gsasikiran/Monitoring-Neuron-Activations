@@ -1,8 +1,7 @@
-from tensorflow.keras.preprocessing.image import load_img, img_to_array
-from keras.applications.vgg16 import preprocess_input
-import matplotlib.pyplot as plt
 import numpy as np
 from PIL import Image
+from keras.applications.vgg16 import preprocess_input
+from tensorflow.keras.preprocessing.image import load_img, img_to_array
 
 
 def image_preprocess(img_path, input_shape):

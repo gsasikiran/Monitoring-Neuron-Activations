@@ -1,9 +1,9 @@
-
 class Tools:
     def __init__(self):
         pass
 
-    def get_conv_layers(self, model):
+    @staticmethod
+    def get_conv_layers(model):
         '''
             This method returns the list of convolutional layers' numbers.
         :param model: Model architecture

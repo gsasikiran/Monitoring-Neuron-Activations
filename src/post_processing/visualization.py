@@ -4,12 +4,18 @@ import matplotlib.pyplot as plt
 class DisplayActivations:
 
     def __init__(self):
-
         pass
 
     @staticmethod
     def __get_rows_cols(n):
         '''
+        Creates better number of rows and cols for plotting
+        @param
+        n: int
+            Total number of feature maps
+
+        @returns int, int
+            Returns number of rows and cols to be plotted
 
         '''
         if n == 32:
@@ -61,7 +67,6 @@ class DisplayActivations:
                 plt.show()
 
         else:
-
             feature_maps = feature_maps[layer - 1]
 
             for fmap in feature_maps:

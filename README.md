@@ -35,7 +35,11 @@ A descriptive visualization of neuron activations for image classification and a
 > git clone https://github.com/gsasikiran/Monitoring-Neuron-Activations
 
 * Run main.py
-> python main.py
+> python visualize_activation.py image_path(with quotes) layer_number
+
+* Example
+> python visualize_activation.py 'images/test_image.png' 2
+
 
 
 ## Project structure
