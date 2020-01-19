@@ -12,7 +12,8 @@ install:
 
 # command to run tests
 script:
-  - python3 -m unittest src.test.test.Image
+  - python "images/test_image.png" 2
+#  - python3 -m unittest src.test.test.Image
 
 
 
