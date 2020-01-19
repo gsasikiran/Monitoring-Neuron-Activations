@@ -12,7 +12,7 @@ install:
 
 # command to run tests
 script:
-  - python "images/test_image.png" 2
+  - python visualize_activation.py "images/test_image.png" 2
 #  - python3 -m unittest src.test.test.Image
 
 
