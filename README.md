@@ -57,5 +57,6 @@ A descriptive visualization of neuron activations for image classification and a
 ## Reference
 
 [1] Cheng, Chih-Hong, Georg Nührenberg, and Hirotoshi Yasuoka. "Runtime monitoring neuron activation patterns." 2019 Design, Automation & Test in Europe Conference & Exhibition (DATE). IEEE, 2019.
+
 [2] Azmi, Mohd Sanusi, et al. "Exploiting features from triangle geometry for digit recognition." 2013 International Conference on Control, Decision and Information Technologies (CoDIT). IEEE, 2013.
 
