@@ -30,22 +30,33 @@ A descriptive visualization of neuron activations for image classification and a
       
 * Design Patterns: Bridge pattern
 
-## Installation
+## Installation and Running
 * Clone the repo
 > git clone https://github.com/gsasikiran/Monitoring-Neuron-Activations
 
-* Run main.py
+* Run visualize_activation.py
 > python visualize_activation.py image_path(with quotes) layer_number
 
-* Example
+* Example command line
 > python visualize_activation.py 'images/test_image.png' 2
 
 
+## Description
+* The layer number is not zero-based index.
+* The 'test_image.png' used for demostration purposes is taken from the triangles dataset[2].
+![Example](/images/example.png)
 
-## Project structure
+
+## Limitations and Future Work
+
+* Currently it works only for 28 x 28 image. This has to be generalized for any image.
+* As the number of activation layers, alter for model to model, the visualization of number of activation layers assists in selecting the layer number in index range.
+* Saving the visualized activation layers.
 
 
 ## Reference
 
 [1] Cheng, Chih-Hong, Georg Nührenberg, and Hirotoshi Yasuoka. "Runtime monitoring neuron activation patterns." 2019 Design, Automation & Test in Europe Conference & Exhibition (DATE). IEEE, 2019.
+
+[2] Azmi, Mohd Sanusi, et al. "Exploiting features from triangle geometry for digit recognition." 2013 International Conference on Control, Decision and Information Technologies (CoDIT). IEEE, 2013.
 
