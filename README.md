@@ -4,8 +4,8 @@
 # Monitoring-Neuron-Activations
 
 ## Authors
-  - Jaswanth Bandlamudi
-  - Sasi Kiran Gaddipati
+- Jaswanth Bandlamudi
+- Sasi Kiran Gaddipati
 
 ## Overview
 
@@ -14,44 +14,44 @@ A descriptive visualization of neuron activations for image classification and a
 
 ## Requirements
 
-  - Language : Python 3.7
+- Language : Python 3.7
   
-  - Coding convention : PEP08
+- Coding convention : PEP08
   
-  - Testing framework : python unittest
+- Testing framework : python unittest
   
-  - Data structure:
-    - **Input** : Image and layer number<br>
+- Data structure:
+  - **Input** : Image and layer number<br>
         - Input the image to get the activation layers
 
-    - **Output** : Image
+  - **Output** : Image
         - Plot the images of the activation layers
 
-  - Design Patterns: Bridge pattern
+- Design Patterns: Bridge pattern
 
 ## Installation and Running
-  -  Clone the repo
-  > git clone https://github.com/gsasikiran/Monitoring-Neuron-Activations
+- Clone the repo
+> git  clone  https://github.com/gsasikiran/Monitoring-Neuron-Activations
 
-  - Run visualize_activation.py
-  > python visualize_activation.py image_path(with quotes) layer_number
+- Run visualize_activation.py
+> python  visualize_activation.py  image_path(with quotes)  layer_number
 
-  - Example command line
-  > python visualize_activation.py 'images/test_image.png' 2
+- Example command line
+> python  visualize_activation.py  'images/test_image.png'  2
 
 ## Description
-  - The layer number is not zero-based index.
+- The layer number is not zero-based index.
   
-  - The 'test_image.png' used for demostration purposes is taken from the triangles dataset[2].  
+- The 'test_image.png' used for demostration purposes is taken from the triangles dataset[2].  
 ![Example](/images/example.png)
 
 ## Limitations and Future Work
 
-  - Currently it works only for 28 x 28 image. This has to be generalized for any image.
+- Currently it works only for 28 x 28 image. This has to be generalized for any image.
   
-  - As the number of activation layers, alter for model to model, the visualization of number of activation layers assists in selecting the layer number in index range.
+- As the number of activation layers, alter for model to model, the visualization of number of activation layers assists in selecting the layer number in index range.
 
-  - Saving the visualized activation layers.
+- Saving the visualized activation layers.
 
 ## Reference
 
