@@ -10,9 +10,11 @@
 ## Overview
 
 A descriptive visualization of neuron activations for image classification and analyzing the robustness of the classification model by comparing the test image output and corresponding activation patterns.
+Project link: https://github.com/gsasikiran/Monitoring-Neuron-Activations
+
 ![Proposed architecture](/images/architecture.png)
 
-Project link: https://github.com/gsasikiran/Monitoring-Neuron-Activations
+
 
 ## Requirements
 
