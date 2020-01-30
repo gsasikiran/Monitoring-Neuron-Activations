@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/gsasikiran/Monitoring-Neuron-Activations.svg?token=Tx91FqTgxZM9ucHAnbfR&branch=master)](https://travis-ci.com/gsasikiran/Monitoring-Neuron-Activations/)
+﻿[![Build Status](https://travis-ci.com/gsasikiran/Monitoring-Neuron-Activations.svg?token=Tx91FqTgxZM9ucHAnbfR&branch=master)](https://travis-ci.com/gsasikiran/Monitoring-Neuron-Activations/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 # Monitoring-Neuron-Activations
@@ -11,6 +11,8 @@
 
 A descriptive visualization of neuron activations for image classification and analyzing the robustness of the classification model by comparing the test image output and corresponding activation patterns.
 ![Proposed architecture](/images/architecture.png)
+
+Project link: https://github.com/gsasikiran/Monitoring-Neuron-Activations
 
 ## Requirements
 
