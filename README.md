@@ -53,7 +53,8 @@ Project link: https://github.com/gsasikiran/Monitoring-Neuron-Activations
   
 - As the number of activation layers, alter for model to model, the visualization of number of activation layers assists in selecting the layer number in index range.
 
-- Saving the visualized activation layers.
+- Monitoring for out of distribution is not achievaible with the implemented approach.
+
 
 ## Reference
 
